@@ -1,0 +1,270 @@
+body{
+    
+    
+     padding: 0;
+    margin: 0;
+    background-color: whitesmoke;
+}
+.navBar {
+    top: 0; /*Keeps navBar on top*/
+    position: fixed;
+    width: 100%;
+    
+    background-color: #333;
+    opacity: 0.95;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 5px 0 #000;
+}
+
+.title {
+    font-family: righteous;
+    float: left; 
+    margin: 0% -18% 0 2%; /*Keeps nav bar on the center*/
+    font-size: 2.5em;
+}
+
+a .title {
+    text-decoration: none; /*Remove default underlining*/
+    color: white;
+}
+.img{
+ width: 50% ;
+height: 50%;    
+}
+
+.navBar li {
+    display: inline; /*Keeps nav bar on ine line*/
+}
+
+.navBar li a {
+    text-decoration: none; /*Remove default underlining*/
+    margin: 1%; /*keeps a distance between navBar items*/
+  font-family: "Bai Jamjuree";
+    font-size: 1.27em;
+    color:white;
+}
+
+.navItem:hover { /*nav item style during hover*/
+    opacity: 0.7;
+    text-decoration: none;
+    background-color: #111;
+    color: lightgray;
+}
+
+.navBar li a:active {
+    opacity: 1;
+}
+
+.navBar li a:visited { 
+    opacity: 0.9;
+    color: aqua;
+}
+.dropBtn {
+    background-color: #333;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+}
+
+.dropDown {
+    position: relative; 
+    display: inline-block; 
+}
+.dropDownContent {
+    display: none; /*Hides content*/
+    position: absolute;
+    background-color: #333;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px black;
+    z-index: 1; /*keeps content on top*/
+}
+
+.dropDownContent a {
+    color: lightgray;
+    padding: 12px 16px;
+    text-decoration: none; /* no underline in th word */
+    display: block;
+}
+
+
+.dropDownContent a:hover {
+    background-color: black; /* when you hover it willl change the color and background*/
+    color:lightgray;
+    text-decoration: none;
+}
+
+
+.dropDownContent a:active {
+    background-color: black;/* Change color of dropDown the moment when you click it */
+}
+
+
+.dropDownContent a:visited {
+    color: darkgoldenrod; /* Changing the color after you visted  */
+}
+
+
+.dropDown:hover .dropDownContent {
+    display: block;/* it will be hidden when you hover it will be displayed */
+}
+
+
+.dropBtn a:hover {
+    background-color: black;
+    color: lightgray;
+    opacity: 0.7;
+    text-decoration: none;
+}
+.banner { /* Keeps position on top (as a referance point) */
+   top: 0; 
+    width: 100%;
+    margin-top: 6%;
+    height: 350px;
+    background-image: url("/Images/tools-to-convert-flash-to-html5-main-1600.jpg"); /* Default image */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* Background covers the width of the page */
+}
+
+/* Banner for HTML page */
+#bannerHTML {
+    background-image: url("/Images/hhhhhhhhh.jpg");
+}
+
+/* Banner for CSS page */
+#bannerCss {
+    background-image: url("/Images/CSS.jpg");
+}
+
+/* Banner for Javascript page */
+#bannerjavascript {
+    background-image: url("/Images/javascript.png");
+}
+
+/* Banner for PHP page */
+#bannerPHP {
+    background-image: url("/Images/PHP1.jpg");
+}
+#bannerCon {
+    background-image: url("/Images/Contact.jpg");
+}
+table {
+    border-collapse: collapse;
+}
+
+th { 
+     word-wrap: break-word; /* for the text does not go away  */
+    background-color: #223;
+    border: 1px solid lightgray;
+    height: 20px;
+    color: bisque;
+   
+}
+
+th,td {
+    text-align: left;
+    padding: 8px;
+ font-family: 'Battambang';
+    height: 20px;
+}
+
+tr:nth-child(odd) {
+    background-color: lightgray; /* every odd row the background it will be lightgray  */
+}
+.main {
+    box-shadow: 0 0 10px 0 #000;
+    margin: 0 0 0 0;
+    padding: 2% 5% 5% 5%;
+}
+
+.h11 { /* i but thie for ever h1-h6   */
+   font-family: 'Battambang';   /* here im using google font */
+    font-size: 1.7em;
+    color: midnightblue;
+}
+
+.p11 { 
+ font-family: 'Battambang';
+    font-size: 1.2em;
+}
+div .t1{
+    line-height: 20px;
+    text-align: center;
+}
+footer{
+    
+    background-color: #222;
+    color: bisque;
+    padding: 2%;
+    
+}
+div .footer1{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.fa{
+    padding: 5px;
+    font-size: 2.1em;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    color: lightgrey;
+   
+}
+input[type=text], /* text box styling */
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+ font-family: 'Battambang';
+
+}
+
+input[type=submit] { /* submit button styling */
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  font-family: 'Battambang';
+
+}
+
+input[type=submit]:hover { 
+    opacity: 0.7;
+}
+
+input[type=submit]:active { 
+    opacity: 0.5;
+}
+
+input[type=submit]:visited { 
+    opacity: 0.9;
+}
+
+label { 
+    font-family: 'Battambang';
+}
+
+.mapContainer { 
+    border-radius: 1%; 
+    margin-bottom: 2%;
+
+}
+
+.map {
+    width: 100%;
+    border-radius: 1%;
+    box-shadow: 2px 2px 10px 0px #999;
+}
